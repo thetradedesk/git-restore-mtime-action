@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Note: This is *only* for the very next step, it is not required by
     # git-restore-mtime-action.
@@ -50,7 +50,7 @@ jobs:
 
     # Check out the new branch
     - name: checkout dist
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: dist
         # git-restore-mtime-bare uses the ref log to find the correct timestamp
